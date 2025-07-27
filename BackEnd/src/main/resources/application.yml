@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/z-com?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  # 设置超时时间
+  session:
+    timeout: 86400
+server:
+  port: 8080
+  # 指定接口全局 api
+  servlet:
+    context-path: /api
+
+# 配置Mybatis-Plus的自动开启驼峰命名规则
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除字段名
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
