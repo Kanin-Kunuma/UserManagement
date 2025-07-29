@@ -1,6 +1,6 @@
-# UserManagement 项目
+# UserManagement
 
-欢迎来到 UserManagement 项目！这是一个基于 Vue3 前端和 SpringBoot 后端的用户管理系统，集成了 MySQL 数据库和 Redis 缓存，使用 Nginx 作为服务器代理。
+这是一个基于 Vue3 前端和 SpringBoot 后端的用户管理系统，集成了 MySQL 数据库和 Redis 缓存，使用 Nginx 作为服务器代理，可作为初学者上手开发的小型项目。
 
 ## 项目概述
 
@@ -41,8 +41,6 @@
    ```
 
 3. **配置后端**：
-   - 修改 `src/main/resources/application.properties` 文件，设置 MySQL 和 Redis 连接信息。
-   - 示例：
      ```
      spring.datasource.url=jdbc:mysql://localhost:3306/usermanagement
      spring.datasource.username=root
@@ -57,7 +55,7 @@
      ```
      mvn spring-boot:run
      ```
-   - 部署前端到 Nginx（参考 Nginx 配置）。
+   - 部署前端到 Nginx。
 
 5. **访问**：
    - 打开浏览器，访问 `http://localhost` 或 `https://www.z-com.icu`。
@@ -75,15 +73,11 @@ UserManagement/
 ## 贡献指南
 
 1. Fork 本仓库。
-2. 创建你的功能分支 (`git checkout -b feature/xxx`)。
+2. 创建你的功能分支 (`git checkout -b feature/`)。
 3. 提交代码 (`git commit -m "添加新功能"`)。
-4. 推送分支 (`git push origin feature/xxx`)。
+4. 推送分支 (`git push origin feature/`)。
 5. 提交 Pull Request。
 
 ## 许可证
 
-[MIT License](LICENSE)（可选，替换为实际许可证）。
-
-## 联系方式
-
-有问题或建议？欢迎通过 [GitHub Issues](https://github.com/Kanin-Kunuma/UserManagement/issues) 联系我！
+[MIT License](LICENSE）
